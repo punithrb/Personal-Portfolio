@@ -55,7 +55,7 @@ export const experienceData = [
     role: 'Graduate Engineer Trainee',
     company: 'HCLTech',
     location: 'Bengaluru, India',
-    period: 'Aug 2006 – Present',
+    period: 'Aug 07 – Present',
     points: [
       'Engineered and maintained a simulated device environment using a centralized control platform for validating software–hardware interaction.',
       'Developed and executed Python-based automation scripts on Linux to ensure scalability and validate complex application functionality.'
@@ -65,7 +65,7 @@ export const experienceData = [
     role: 'Academic Trainee',
     company: 'HCLTech',
     location: 'Bengaluru, India',
-    period: 'Apr 2017 – Aug 2006',
+    period: 'Apr 17 – Aug 6',
     points: [
       'Applied SDLC and Agile methodologies in a 3‑month intensive program focused on Python programming fundamentals.'
     ]
