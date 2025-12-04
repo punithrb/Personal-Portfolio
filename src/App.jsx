@@ -103,7 +103,7 @@ const App = () => {
               <span className="hero-secondary-pill">
                 Currently · Graduate Engineer Trainee @ HCLTech
               </span>
-              <span>Building scalable and user‑centric web solutions.</span>
+              {/* <span>Building scalable and user‑centric web solutions.</span> */}
             </div>
           </div>
 
@@ -160,11 +160,13 @@ const App = () => {
             </div>
           </div>
           <div className="about-grid">
-            <div className="card">
+            <div className="card tile-hover">
+
               <div className="card-title">Overview</div>
               <div className="card-body">{aboutData.summary}</div>
             </div>
-            <div className="card">
+            <div className="card tile-hover">
+
               <div className="card-title">What I do</div>
               <ul className="card-list">
                 {aboutData.details.map((item, idx) => (
@@ -187,7 +189,8 @@ const App = () => {
             </div>
           </div>
           <div className="about-grid">
-            <div className="card">
+            <div className="card tile-hover">
+
               <div className="card-title">Education</div>
               <div className="card-body">
                 <div className="education-list">
@@ -214,7 +217,8 @@ const App = () => {
               </div>
             </div>
 
-            <div className="card">
+            <div className="card tile-hover">
+
               <div className="card-title">Experience</div>
               <div className="card-body">
                 <div className="experience-list">
@@ -254,7 +258,8 @@ const App = () => {
               </div>
             </div>
           </div>
-          <div className="card">
+          <div className="card tile-hover">
+
             <div className="card-body">
               <div className="skills-grid">
                 <SkillGroup
@@ -323,7 +328,8 @@ const App = () => {
               </div>
             </div>
           </div>
-          <div className="card">
+          <div className="card tile-hover">
+
             <div className="card-body">
               {certificationsData.map((cert, idx) => (
                 <div key={idx} style={{ marginBottom: '10px', fontSize: '13px' }}>
