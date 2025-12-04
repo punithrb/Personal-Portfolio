@@ -109,6 +109,6 @@ export const certificationsData = [
 export const contactData = {
   phone: '7795349987',
   email: 'punithrb123avs@gmail.com',
-  linkedin: '#',
-  github: '#'
+  linkedin: 'https://www.linkedin.com/in/punith-r-b-9049a8259',
+  github: 'https://github.com/punithrb'
 };

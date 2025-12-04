@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import {
   heroData,
   aboutData,
@@ -11,7 +11,9 @@ import {
 } from './data';
 import './styles.css';
 import profileImg from './assets/profile.jpg';
-import resumePdf from './assets/resume.pdf';
+import resumePdf from './assets/Punith-RB-Resume.pdf';
+import GitHubCalendar from 'github-calendar';
+
 
 const App = () => {
   const scrollToSection = id => {
@@ -20,6 +22,13 @@ const App = () => {
       el.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
   };
+
+
+  useEffect(() => {
+    GitHubCalendar('.calendar', 'punithrb', {
+      responsive: true
+    });
+  }, []);
 
   return (
     <div className="app-root">
@@ -181,7 +190,7 @@ const App = () => {
         <section id="education" className="section">
           <div className="section-header">
             <div>
-              <div className="section-tag">Path</div>
+              {/* <div className="section-tag">Path</div> */}
               <div className="section-title">
                 Education & Experience
                 <div className="section-title-glow" />
@@ -251,7 +260,7 @@ const App = () => {
         <section id="skills" className="section">
           <div className="section-header">
             <div>
-              <div className="section-tag">Stack</div>
+              {/* <div className="section-tag">Stack</div> */}
               <div className="section-title">
                 Skills & Tools
                 <div className="section-title-glow" />
@@ -280,7 +289,7 @@ const App = () => {
         <section id="projects" className="section">
           <div className="section-header">
             <div>
-              <div className="section-tag">Work</div>
+              {/* <div className="section-tag">Work</div> */}
               <div className="section-title">
                 Selected Projects
                 <div className="section-title-glow" />
@@ -321,7 +330,7 @@ const App = () => {
         <section className="section">
           <div className="section-header">
             <div>
-              <div className="section-tag">Creds</div>
+              {/* <div className="section-tag">Creds</div> */}
               <div className="section-title">
                 Certifications
                 <div className="section-title-glow" />
@@ -343,11 +352,34 @@ const App = () => {
           </div>
         </section>
 
+
+
+        {/* GitHub Calendar */}
+        <section className="section">
+          <div className="section-header">
+            <div>
+              <div className="section-tag">GitHub</div>
+              <div className="section-title">
+                Contribution Calendar
+                <div className="section-title-glow" />
+              </div>
+            </div>
+          </div>
+          <div className="card">
+            <div className="card-body">
+              <div className="calendar" />
+            </div>
+          </div>
+        </section>
+
+
+
+
         {/* Contact */}
         <section id="contact" className="section">
           <div className="section-header">
             <div>
-              <div className="section-tag">Connect</div>
+              {/* <div className="section-tag">Connect</div> */}
               <div className="section-title">
                 Let&apos;s collaborate
                 <div className="section-title-glow" />
@@ -362,7 +394,7 @@ const App = () => {
                   <div className="contact-row">
                     <div>
                       <div className="contact-label">Phone</div>
-                      <div className="contact-value">{contactData.phone}</div>
+                      <div className="contact-value">{"+91  " + contactData.phone}</div>
                     </div>
                   </div>
                   <div className="contact-row">
@@ -380,11 +412,12 @@ const App = () => {
                   <div className="contact-row">
                     <div>
                       <div className="contact-label">GitHub</div>
-                      <div className="contact-value">
+                      {/* <div className="contact-value">
                         {contactData.github === '#'
                           ? 'https://github.com/punithrb'
                           : contactData.github}
-                      </div>
+                      </div> */}
+                      <div className="contact-value">{contactData.github}</div>
                     </div>
                     {contactData.github !== '#' && (
                       <a
@@ -400,11 +433,8 @@ const App = () => {
                   <div className="contact-row">
                     <div>
                       <div className="contact-label">LinkedIn</div>
-                      <div className="contact-value">
-                        {contactData.linkedin === '#'
-                          ? 'www.linkedin.com/in/punith-r-b-9049a8259'
-                          : contactData.linkedin}
-                      </div>
+                      <div className="contact-value">{contactData.linkedin}</div>
+
                     </div>
                     {contactData.linkedin !== '#' && (
                       <a
