@@ -925,6 +925,30 @@ label {
   resize: vertical;
 }
 
+.github-stats-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+
+@media (min-width: 900px) {
+  .github-stats-wrap {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+  }
+}
+
+.github-stats-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  background: #020617;
+}
+
+
 /* Footer */
 
 .footer {

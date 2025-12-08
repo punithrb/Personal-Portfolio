@@ -353,23 +353,54 @@ const App = () => {
         </section>
 
 
-        {/* GitHub Calendar */}
-        <section className="section">
-          <div className="section-header">
-            <div>
-              <div className="section-tag">GitHub</div>
-              <div className="section-title">
-                Contribution Calendar
-                <div className="section-title-glow" />
-              </div>
-            </div>
-          </div>
-          <div className="card">
-            <div className="card-body">
-              <div className="calendar" />
-            </div>
-          </div>
-        </section>
+{/* GitHub Activity */}
+<section className="section">
+  <div className="section-header">
+    <div>
+      <div className="section-tag">GitHub</div>
+      <div className="section-title">
+        Activity & Stats
+        <div className="section-title-glow" />
+      </div>
+    </div>
+  </div>
+
+  <div className="card tile-hover">
+    <div className="card-body github-stats-wrap">
+      {/* 1. Contributions calendar */}
+      <img
+        src="https://ghchart.rshah.org/22d3ee/punithrb"
+        alt="GitHub contribution calendar for punithrb"
+        className="github-stats-img"
+      />
+
+      {/* 2. Main stats */}
+      <img
+        src="https://github-readme-stats-git-masterorgs-github-readme-stats-team.vercel.app/api?username=punithrb&show_icons=true&theme=tokyonight&hide_border=true"
+        alt="GitHub Stats"
+        className="github-stats-img"
+      />
+
+      {/* 3. Streak stats */}
+      <img
+        src="https://github-readme-streak-stats.herokuapp.com?user=punithrb&theme=tokyonight&hide_border=true"
+        alt="GitHub Streak Stats"
+        className="github-stats-img"
+      />
+
+      {/* 4. Top languages */}
+      <img
+        src="https://github-readme-stats-git-masterorgs-github-readme-stats-team.vercel.app/api/top-langs/?username=punithrb&layout=compact&theme=tokyonight&hide_border=true"
+        alt="Top Languages"
+        className="github-stats-img"
+      />
+    </div>
+  </div>
+</section>
+
+
+
+
 
 
 
