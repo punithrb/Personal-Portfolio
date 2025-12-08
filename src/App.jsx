@@ -63,7 +63,7 @@ const App = () => {
       </header>
 
       <main className="app-shell">
-        {/* Hero */}
+        {/* Hero  */}
         <section id="hero" className="section hero">
           <div className="hero-main">
             <div className="hero-pill">
@@ -351,7 +351,6 @@ const App = () => {
             </div>
           </div>
         </section>
-
 
 
         {/* GitHub Calendar */}
